@@ -1,6 +1,6 @@
 package arraysandstrings
 
-fun twoSum(numbers: IntArray, target: Int): IntArray {
+fun twoSum2(numbers: IntArray, target: Int): IntArray {
     val map = mutableMapOf<Int, Int>()
     val result = mutableListOf<Int>()
     numbers.forEachIndexed { index, it ->
@@ -16,7 +16,7 @@ fun twoSum(numbers: IntArray, target: Int): IntArray {
 }
 
 fun main() {
-    val result = twoSum(intArrayOf(2, 7, 11, 15), 9)
+    val result = twoSum2(intArrayOf(2, 7, 11, 15), 9)
 
     println("result ${result.contentToString()}")
 }
